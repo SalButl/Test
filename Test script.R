@@ -8,5 +8,5 @@ tv_hours_tab <- gss_cat %>%
   group_by(marital) %>% 
   summarise(mean_tv_hours = mean(tvhours, na.rm = T))
 
-write_csv(test, here("Testcsv"))
+write_csv(tv_hours_tab, here("Testcsv"))
 
